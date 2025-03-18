@@ -2,14 +2,14 @@
 This repo goes over submitting transactions to and from a contract for asset creation, transfer, clawback, and freeze/unfreeze.
 Algorand-Python is used for smart contract development, PUYA for compilation, and the newest Algokit Utils Version: 3.0.2 (which is insanely fluid and finally allows for auto-resource population as in the JS/TS libraries)
 
+## Unfreeze/Transfer/Freeze Between Two Accounts
 ![image](https://github.com/user-attachments/assets/8c00db03-bb16-49c7-8773-89c2ae8ccc77)
 
-*Image Above: The unfreeze/transfer/freeze method for two accounts*
 *https://lora.algokit.io/testnet/block/49741682/group/bL1c7W%2F%2FgzvOaUGTCHI6mERANbXiV4Ai1hSRlLTFH5k%3D*
 
+## Clawing back an asset from an account back to the contract
 ![image](https://github.com/user-attachments/assets/88380289-4770-4e65-b126-47b1f00451ea)
 
-*Image Above: Clawing back an asset from an account back to the contract*
 *https://lora.algokit.io/testnet/transaction/Z5AQBZTURFBLWVYDOKFCXEDR35B46TIGORNZKAP5HCNUXRNBESTA*
 
 # Steps
