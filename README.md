@@ -24,7 +24,7 @@ pip install python-dotenv
 If you don't have Python installed, vist https://www.python.org/ and make sure to run as administrator and select the "Add Python.exe to Path" option when installing.
 
 - Generate two arbitrary accounts (These must be funded via https://bank.testnet.algorand.network/ as the codebase works around testnet)
-- Deploy the contract, should you make changes you can recompile with `algokit compile py contract.py --output-arc56`
+- Deploy the contract, should you make changes you can recompile with `algokit compile py contract.py --output-arc56` and recompile a client with 'algokitgen-py -a 'Test.arc56.json' -o test_client.py
 - Call the "Create Asset" method in the contract with the Freeze argument toggled to either True or False
 - Call the "Transfer Asset" method in the contract to obtain 1 asset unit from the contract
 - Call the "Clawback Asset" method in the contract to clawback 1 asset unit from the dispensed account global state set in "Transfer Asset" method
