@@ -8,7 +8,7 @@
 - Call the "User Request Unfreeze Asset" and "User Request Freeze Asset" methods, these calls request that the sender and the receiver for an asset transfer be unfrozen, the sender can now perform the transfer, and then the refreeze occurs for both the sender and receiver.
 
 *Notes:*
-- *the "User Request Unfreeze Asset" will fail if the transaction 2 indexes ahead in the group is not "User Request Freeze Asset", see line below in "User Request Unfreeze Asset":
+- *the "User Request Unfreeze Asset" will fail if the transaction 2 indexes ahead in the group is not "User Request Freeze Asset", see line below in "User Request Unfreeze Asset":*
 `assert gtxn.ApplicationCallTransaction(txn_index + 2).app_args(0) == arc4_signature("user_request_freeze(account)void"), "User did not request freeze after unfreeze and transfer"`
 - *the clawback asset transfer bypasses freeze, so it doesn't matter if an account is frozen or not when clawing back an asset*
 - *the args for the "Clawback Asset" method can be adjusted to accept a target clawback account, just set the asset_sender field to the argument received*
