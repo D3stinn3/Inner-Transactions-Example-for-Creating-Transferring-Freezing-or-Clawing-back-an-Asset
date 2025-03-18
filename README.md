@@ -4,7 +4,7 @@ Algorand-Python is used for smart contract development, PUYA for compilation, an
 
 ![image](https://github.com/user-attachments/assets/8c00db03-bb16-49c7-8773-89c2ae8ccc77)
 
-*The unfreeze/transfer/freeze method*
+*Image Above: The unfreeze/transfer/freeze method for two accounts*
 
 # Steps
 The files have been numbered to assist you in following the workflow
