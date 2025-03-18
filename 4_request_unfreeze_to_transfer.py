@@ -9,10 +9,10 @@ print("Calling Unfreeze method to unfreeze myself and another user,\n transferri
 
 new_group = test_app_client.new_group()
 
-receiver_assete = algorand.account.get_information(address_2).assets
+receiver_assets = algorand.account.get_information(address_2).assets
 
 opted_into_asset = False
-for asset in receiver_assete:
+for asset in receiver_assets:
     if asset['asset-id'] == asset_id_created:
         opted_into_asset = True
 
