@@ -5,7 +5,7 @@ from test_client import UserRequestUnfreezeArgs, UserRequestFreezeArgs
 
 asset_id_created = algorand.app.get_global_state(test_app_client.app_id).get('asset').value
 
-print("Calling Unfreeze method to unfreeze myself and another user,\n transferring some of the asset another user,\n then calling the Freeze method to refreeze me and another user . . .")
+print("Calling Unfreeze method to unfreeze myself and another user,\n transferring some of the asset another user,\n then calling the Freeze method to refreeze myself and another user (refreeze is mandatory as per contract asserts) . . .")
 
 new_group = test_app_client.new_group()
 
