@@ -13,7 +13,15 @@ Algorand-Python is used for smart contract development, PUYA for compilation, an
 *https://lora.algokit.io/testnet/transaction/Z5AQBZTURFBLWVYDOKFCXEDR35B46TIGORNZKAP5HCNUXRNBESTA*
 
 # Steps
-The files have been numbered to assist you in following the workflow
+The files have been numbered to assist you in following the workflow, algokit_utils, the py-algorand-sdk, python-dotenv, (algorand-python and algokit as well only if recompiling)
+```
+pip install algokit_utils
+pip install algorand-python
+pip install py-algorand-sdk
+pip install python-dotenv
+```
+
+If you don't have Python installed, vist https://www.python.org/ and make sure to run as administrator and select the "Add Python.exe to Path" option when installing.
 
 - Generate two arbitrary accounts (These must be funded via https://bank.testnet.algorand.network/ as the codebase works around testnet)
 - Deploy the contract, should you make changes you can recompile with `algokit compile py contract.py --output-arc56`
