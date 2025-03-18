@@ -3,6 +3,7 @@ This repo goes over submitting transactions to and from a contract for asset cre
 Algorand-Python is used for smart contract development, PUYA for compilation, and the newest Algokit Utils Version: 3.0.2 (which is insanely fluid and finally allows for auto-resource population as in the JS/TS libraries)
 
 ![image](https://github.com/user-attachments/assets/8c00db03-bb16-49c7-8773-89c2ae8ccc77)
+
 *The unfreeze/transfer/freeze method*
 
 # Steps
