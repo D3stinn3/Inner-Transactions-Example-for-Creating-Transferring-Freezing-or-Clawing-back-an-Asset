@@ -1,4 +1,9 @@
 # Overview
+This repo goes over submitting transactions to and from a contract for asset creation, transfer, clawback, and freeze/unfreeze.
+Algorand-Python is used for smart contract development, PUYA for compilation, and the newest Algokit Utils Version: 3.0.2 (which is insanely fluid and finally allows for auto-resource population as in the JS/TS libraries)
+
+# Steps
+The files have been numbered to assist you in following the workflow
 
 - Generate two arbitrary accounts (These must be funded via https://bank.testnet.algorand.network/ as the codebase works around testnet)
 - Deploy the contract, should you make changes you can recompile with `algokit compile py contract.py --output-arc56`
