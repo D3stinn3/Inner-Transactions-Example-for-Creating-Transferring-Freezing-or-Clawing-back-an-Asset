@@ -12,7 +12,8 @@
 `assert gtxn.ApplicationCallTransaction(txn_index + 2).app_args(0) == arc4_signature("user_request_freeze(account)void"), "User did not request freeze after unfreeze and transfer"`
 - *the clawback asset transfer bypasses freeze, so it doesn't matter if an account is frozen or not when clawing back an asset*
 - *the args for the "Clawback Asset" method can be adjusted to accept a target clawback account, just set the asset_sender field to the argument received*
-Eg;
+
+*Eg;*
 ```    @abimethod
     def clawback_asset(
         self,
